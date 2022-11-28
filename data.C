@@ -85,13 +85,9 @@ etas->Add(etatransverse);
 etas->Draw();
 //using the default function of giving colour to histogram in root//
  
-etatoward->SetMarkerStyle(kFullCircle);
-etaaway->SetMarkerStyle(kFullSquare);
-etatransverse->SetMarkerStyle(kFullTriangleUp);
-etaaway->Draw("PLC PMC");
-etatoward->Draw("SAME PLC PMC");
-etatransverse->Draw("SAME PLC PMC");
-
+etatoward->SetLineColor(18);
+etaaway->SetLineColor(12);
+etatransverse->SetLineColor(8);
 
 //as of now the code will draw the graph for the variable eta//
 
@@ -103,13 +99,9 @@ phis->Add(phiaway);
 phis->Add(phitransverse);
 
 phis->Draw();
-
-phitoward->SetMarkerStyle(kFullCircle);
-phiaway->SetMarkerStyle(kFullSquare);
-phitransverse->SetMarkerStyle(kFullTriangleUp);
-phiaway->Draw("PLC PMC");
-phitoward->Draw("SAME PLC PMC");
-phitransverse->Draw("SAME PLC PMC");*/
+phitoward->SetLineColor(18);
+phiaway->SetLineColor(12);
+phitransverse->SetLineColor(8);*/
 
 /*
 pts->Add(pttoward);
@@ -118,12 +110,9 @@ pts->Add(pttransverse);
 
 pts->SetMinimum(0.0);
 pts->Draw();
-pttoward->SetMarkerStyle(kFullCircle);
-ptaway->SetMarkerStyle(kFullSquare);
-pttransverse->SetMarkerStyle(kFullTriangleUp);
-ptaway->Draw("PLC PMC");
-pttoward->Draw("SAME PLC PMC");
-pttransverse->Draw("SAME PLC PMC");*/
+pttoward->SetLineColor(18);
+ptaway->SetLineColor(12);
+pttransverse->SetLineColor(8);*/
 
 
 canvas->BuildLegend();
